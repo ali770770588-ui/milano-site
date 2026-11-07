@@ -3,333 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة ميلانو | خدمات التخليص والتجارة والشحن الدولي</title>
-
-    <!-- Bootstrap 5 RTL -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Google Fonts: Cairo -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary-color: #0b192c;
-            --secondary-color: #1e3e62;
-            --accent-color: #ff6500;
-            --bg-light: #f4f7f6;
-            --font-main: 'Cairo', sans-serif;
-        }
-
-        body {
-            font-family: var(--font-main);
-            background-color: var(--bg-light);
-            color: #1f2937;
-            scroll-behavior: smooth;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            background-color: var(--primary-color) !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-        .navbar-brand {
-            font-weight: 800;
-            color: #ffffff !important;
-            font-size: 1.6rem;
-        }
-        .navbar-brand span {
-            color: var(--accent-color);
-        }
-        .nav-link {
-            color: #d1d5db !important;
-            font-weight: 600;
-            padding: 0.5rem 1rem !important;
-            transition: all 0.3s ease;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: var(--accent-color) !important;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            padding: 90px 0 70px;
-            background: linear-gradient(135deg, #0b192c 0%, #1e3e62 100%);
-            color: #ffffff;
-        }
-        .hero-badge {
-            background-color: rgba(255, 101, 0, 0.15);
-            color: var(--accent-color);
-            border: 1px solid var(--accent-color);
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            display: inline-block;
-        }
-        .hero-title {
-            font-size: 2.7rem;
-            font-weight: 800;
-            line-height: 1.35;
-        }
-        .hero-title span {
-            color: var(--accent-color);
-        }
-        .hero-description {
-            font-size: 1.1rem;
-            color: #d1d5db;
-            line-height: 1.8;
-        }
-        .btn-main {
-            background-color: var(--accent-color);
-            color: #ffffff;
-            font-weight: 700;
-            padding: 12px 30px;
-            border-radius: 8px;
-            border: none;
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-main:hover {
-            background-color: #e05500;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 101, 0, 0.3);
-        }
-        .btn-outline-custom {
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            font-weight: 700;
-            padding: 10px 28px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        .btn-outline-custom:hover {
-            background-color: #ffffff;
-            color: var(--primary-color);
-            transform: translateY(-2px);
-        }
-
-        /* Cards & Sections */
-        .section-title {
-            color: var(--primary-color);
-            font-weight: 800;
-        }
-        .service-card {
-            border: none;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            background: #ffffff;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(11, 25, 44, 0.12);
-        }
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--accent-color);
-        }
-
-        /* Feature Item */
-        .feature-box {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            border-right: 4px solid var(--accent-color);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: #9ca3af;
-            padding: 35px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
-    </style>
+    <title>شركة ميلانو | للشحن والتخليص والتجارة والنقل الدولي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- شريط التنقل العلوي -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">شركة <span>ميلانو</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-shipping-fast"></i> ميلانو <span>للخدمات والشحن</span>
+            </a>
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#why-us">لماذا نحن</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- الواجهة الرئيسية (Hero Section) -->
-    <header id="hero" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center gy-5">
-                <div class="col-lg-7">
-                    <span class="hero-badge mb-3">
-                        <i class="bi bi-shield-check ms-1"></i> الشريك اللوجستي والتجاري الموثوق
-                    </span>
-                    <h1 class="hero-title mb-4">
-                        نعبر بـ <span>تجارتك ومعاملاتك</span> آفاق المعمورة بكل أمان وسرعة
-                    </h1>
-                    <p class="hero-description mb-4">
-                        نقدم منظومة خدمات متكاملة تدمج بين التخليص الجمركي الفوري، النقل والشحن الدولي (بحري، جوي، بري)، وإنجاز المعاملات وتوفير الحلول التجارية بكفاءة عالية.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#contact" class="btn-main">
-                            <i class="bi bi-whatsapp ms-2"></i> اطلب خدمة الآن
-                        </a>
-                        <a href="#services" class="btn-outline-custom">
-                            <i class="bi bi-grid ms-2"></i> استعرض خدماتنا
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="الشحن والتجارة والتخليص" class="img-fluid rounded-4 shadow-lg">
-                </div>
-            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html" class="btn-contact">اتصل بنا</a>
+            </nav>
         </div>
     </header>
 
-    <!-- قسم الخدمات -->
-    <section id="services" class="py-5">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <h2 class="section-title fw-bold fs-1">خدماتنا المتكاملة</h2>
-                <p class="text-muted">حلول موثوقة مصممة لتلبية تطلعات التجار والشركات والأفراد</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="service-card p-4 h-100 text-center">
-                        <div class="service-icon mb-3"><i class="bi bi-truck"></i></div>
-                        <h3 class="h4 fw-bold mb-3">الشحن والنقل الدولي</h3>
-                        <p class="text-muted">خدمات شحن بحري، جوي، وبري متطورة تغطي كافة المقاصد العالمية مع عناية كاملة بشحنتك والتزام بالمواعيد.</p>
-                    </div>
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text-content">
+                <span class="hero-badge"><i class="fa-solid fa-award"></i> الشريك اللوجستي الأوثق لإدارة أعمالك</span>
+                <h1>بوابتك المتكاملة للشحن، التخليص، والتجارة الدولية</h1>
+                <p>نقدم حلولاً لوجستية متطورة، تخليص معاملات سريع، وخدمات نقل دولي تجمع بين السرعة والأمان والكفاءة لتلبية تطلعات عملك التجاري حول العالم.</p>
+                <div class="hero-actions">
+                    <a href="services.html" class="btn btn-primary"><span>استكشف خدماتنا</span> <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-headset"></i> تواصل مع خبير</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-card p-4 h-100 text-center">
-                        <div class="service-icon mb-3"><i class="bi bi-file-earmark-text"></i></div>
-                        <h3 class="h4 fw-bold mb-3">تخليص المعاملات</h3>
-                        <p class="text-muted">إنجاز المعاملات الجمركية وتوثيق الأوراق والمستندات الحكومية والتجارية بدقة متناهية وسرعة قياسية.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card p-4 h-100 text-center">
-                        <div class="service-icon mb-3"><i class="bi bi-globe2"></i></div>
-                        <h3 class="h4 fw-bold mb-3">الخدمات والتجارة</h3>
-                        <p class="text-muted">دعم كامل لسلاسل الإمداد، والاستشارات التجارية، وتسهيل إجراءات الاستيراد والتصدير للشركات والأفراد.</p>
-                    </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><strong>+10</strong><span>سنوات خبرة</span></div>
+                    <div class="stat-item"><strong>+5000</strong><span>شحنة منجزة</span></div>
+                    <div class="stat-item"><strong>100%</strong><span>موثوقية وأمان</span></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم من نحن -->
-    <section id="about" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="row align-items-center gy-4">
-                <div class="col-lg-6">
-                    <h2 class="section-title fw-bold mb-3 fs-2">عن شركة ميلانو</h2>
-                    <p class="text-muted leading-relaxed mb-4">
-                        شركة ميلانو هي مؤسسة متخصصة في تقديم خدمات تخليص المعاملات والحلول اللوجستية والتجارة والنقل الدولي. نحن نعمل على تبسيط وتسهيل الإجراءات المعقدة لعملائنا عبر تسخير خبراتنا وشبكة علاقاتنا لضمان تدفق بضائعهم وأعمالهم دون عوائق.
-                    </p>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-check-circle-fill text-success fs-4 ms-2"></i>
-                                <span class="fw-semibold">دقة واحترافية بالعمل</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-check-circle-fill text-success fs-4 ms-2"></i>
-                                <span class="fw-semibold">تغطية وشبكة واسعة</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="من نحن شركة ميلانو" class="img-fluid rounded-4 shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم لماذا نحن -->
-    <section id="why-us" class="py-5">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <h2 class="section-title fw-bold fs-2">لماذا تختار شركة ميلانو؟</h2>
-                <p class="text-muted">نلتزم بتوفير تجربة خالية من التعقيد لعملائنا</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box h-100">
-                        <i class="bi bi-lightning-charge-fill fs-2 text-warning mb-2 d-block"></i>
-                        <h4 class="h5 fw-bold">سرعة الإنجاز</h4>
-                        <p class="text-muted small mb-0">ننهي معاملتك وشحناتك بأقصر وقت ممكن دون تأخير.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box h-100">
-                        <i class="bi bi-shield-lock-fill fs-2 text-primary mb-2 d-block"></i>
-                        <h4 class="h5 fw-bold">أمان وحماية</h4>
-                        <p class="text-muted small mb-0">حماية كاملة لشحناتك ومستنداتك مع متابعة مستمرة.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box h-100">
-                        <i class="bi bi-currency-dollar fs-2 text-success mb-2 d-block"></i>
-                        <h4 class="h5 fw-bold">أسعار تنافسية</h4>
-                        <p class="text-muted small mb-0">خطط أسعار مدروسة وشفافية كاملة دون أي تكاليف خفية.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box h-100">
-                        <i class="bi bi-headset fs-2 text-danger mb-2 d-block"></i>
-                        <h4 class="h5 fw-bold">دعم متواصل</h4>
-                        <p class="text-muted small mb-0">فريقنا جاهز على مدار الساعة للإجابة على جميع الاستفسارات.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم التواصل معنا -->
-    <section id="contact" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title fw-bold mb-3 fs-2">تواصل معنا اليوم</h2>
-                    <p class="text-muted mb-4">يسعدنا استقبال استفساراتكم وتقديم المشورة الفنية وعروض الأسعار</p>
-                    <div class="card p-4 shadow-sm border-0 bg-light">
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <i class="bi bi-telephone-fill text-primary fs-2 d-block mb-2"></i>
-                                <h5 class="fw-bold h6">الهاتف / الواتساب</h5>
-                                <p class="text-muted small mb-0" dir="ltr">+967 XX XXX XXX</p>
-                            </div>
-                            <div class="col-md-4">
-                                <i class="bi bi-envelope-fill text-primary fs-2 d-block mb-2"></i>
-                                <h5 class="fw-bold h6">البريد الإلكتروني</h5>
-                                <p class="text-muted small mb-0">info@milano-services.com</p>
-                            </div>
-                            <div class="col-md-4">
-                                <i class="bi bi-geo-alt-fill text-primary fs-2 d-block mb-2"></i>
-                                <h5 class="fw-bold h6">العنوان</h5>
-                                <p class="text-muted small mb-0">المركز الرئيسي - الممر اللوجستي</p>
-                            </div>
+            <div class="hero-image-content">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="خدمات الشحن والنقل الدولي">
+                    <div class="floating-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>شحن آمن ومضمون</h4>
+                            <p>تغطية شاملة لكل وجهات العالم</p>
                         </div>
                     </div>
                 </div>
@@ -337,14 +58,78 @@
         </div>
     </section>
 
-    <!-- تذييل الصفحة -->
-    <footer class="text-center">
-        <div class="container">
-            <p class="mb-0 fs-6">جميع الحقوق محفوظة &copy; 2026 شركة ميلانو لتخليص المعاملات والخدمات والتجارة وخدمات الشحن والنقل الدولي.</p>
+    <section class="features container">
+        <div class="feature-box">
+            <i class="fa-solid fa-globe"></i>
+            <h3>تغطية دولية واسعة</h3>
+            <p>شبكة شحن ونقل تربطك بمختلف أنحاء العالم بكفاءة عالية.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>سرعة في الإنجاز</h3>
+            <p>تخليص معاملات وإجراءات جمركية بدقة وسرعة متناهية.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>أمان وموثوقية</h3>
+            <p>ضمان كامل لسلامة شحناتك ومعاملاتك التجارية طوال رحلتها.</p>
+        </div>
+    </section>
+
+    <section class="overview container">
+        <div class="section-title">
+            <h2>خدماتنا الأساسية</h2>
+            <p>نلبي كافة احتياجاتك التجارية واللوجستية تحت سقف واحد</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <h3>تخليص المعاملات</h3>
+                <p>إنجاز كافة الإجراءات الحكومية والجمركية بأعلى معايير الاحترافية.</p>
+                <a href="services.html" class="read-more">المزيد <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>الشحن والنقل الدولي</h3>
+                <p>شحن بحري، جوي، وبري آمن وسريع يغطي الوجهات العالمية.</p>
+                <a href="services.html" class="read-more">المزيد <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>التجارة والخدمات</h3>
+                <p>حلول تجارية متكاملة ودعم شامل لتنمية أعمالك واستيرادك.</p>
+                <a href="services.html" class="read-more">المزيد <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>شركة ميلانو</h3>
+                <p>شريكك الموثوق في تخليص المعاملات، خدمات الشحن والنقل الدولي، والتجارة.</p>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <p><i class="fa-solid fa-location-dot"></i> الشارع التجاري، المدينة، الدولة</p>
+                <p><i class="fa-solid fa-phone"></i> +000 000 000 000</p>
+                <p><i class="fa-solid fa-envelope"></i> info@milano-company.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 شركة ميلانو للخدمات والتجارة والنقل الدولي.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
